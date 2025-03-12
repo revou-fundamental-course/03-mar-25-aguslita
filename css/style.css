@@ -44,7 +44,7 @@
   .main-logo {
      height: 45px;
      width: 45px;
-     background-image: url(./assets/logo.png);
+     background-image: url(/assets/logo.png);
      background-size: cover;
      border-radius: 50%;
   }
