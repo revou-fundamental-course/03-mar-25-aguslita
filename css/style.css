@@ -6,10 +6,15 @@
  body {
    /* jenis font */
    font-family: Helvetica, sans-serif;
-   color: #f2f2f2;
-   background: linear-gradient(65deg, #2a77d4, #1b1b1b, #1b1b1b);
+   color: #333;
+   background-color: #f5f5f5;
  }
 
+ .text.transparent {
+   color: transparent;
+ }
+
+  /* blur background */
  .blur-overlay {
    position: fixed;
    top: 0;
@@ -61,25 +66,40 @@
    padding: 8px;
    border: 1px solid;
    text-decoration: none;
-   color: #fff;
+   color: #ddd;
    z-index: 1000;
   }
 
-  .bi-sun-fill {
-    font-size: 16px;
-  }
-  .bi-sun-fill:hover {
+  .img-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100px; /* Ukuran tetap */
+    height: 50px; /* Tinggi tetap */
+    padding: 10px;
+    gap: 20px;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
-    color: #d0d0d0;
+    font-size: 16px; /* Pastikan ukuran teks sama */
+    text-align: center;
+    
   }
-  .bi-moon-fill {
-    font-size: 16px;
-    display: none;
-  }
-  .bi-moon-fill:hover {
-    cursor: pointer;
-    color: #d0d0d0; 
-  }
+
+  /* start of banner style */
+.slide {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1200px;
+}
+
+.img-slideshow {
+  width: 100%;
+  display: none;
+}
 
   .konten-profile {
       border: 1px solid;
@@ -171,7 +191,6 @@
 
 .input, .output {
   width: 48%; /* Membagi area 2 bagian */
-  border: 1px solid #ccc; /* Border yang sama */
     border-radius: 5px;
     padding: 15px;  
     box-sizing: border-box; /* Supaya padding tidak menambah ukuran */
@@ -179,8 +198,7 @@
 
 .table {
   border-collapse: separate;
-  width: 100%;
-  max-width: 640px;
+  width: 50%;
 }
 
 .table td {
@@ -221,19 +239,21 @@ input, textarea {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  border: 1px solid #ccc;
 }
 
 button {
   width: 103%;
   max-width: 640px;
   padding: 8px;
-  background-color: #007bff;
-  color: white;
+  background-color: #ebd247;
+  color: #333;
   border: none;
   border-radius: 10px;
   cursor: pointer;
 }
 
 button:hover {
-  background-color: #879eb7;
+  background-color: #007bff;
+  color: #eee;
 }

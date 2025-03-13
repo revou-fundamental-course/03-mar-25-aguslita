@@ -24,6 +24,7 @@
 
           <!-- header utama -->
           <header class="main-header">
+                         
                <!-- logo -->
                <div class="main-logo">
                     <a href="#profile"></a>
@@ -34,10 +35,6 @@
                     <a href="#home">Home</a>
                     <a href="#profile">Profile</a>
                     <a href="#message-us">Message Us</a>
-                    <a>
-                         <i class="bi bi-sun-fill"></i>
-                         <i class="bi bi-moon-fill"></i>
-                    </a>
                </nav>
                
           </header>
@@ -45,10 +42,32 @@
 
           <!-- konten utama -->
           <main>
+               
                <!-- konten home -->
                <section id="home">
-                    <h1>Halo, Selamat datang di Website Portofolio saya!</h1>
-                    <p>disini anda dapat melihat profil dan kontak saya.</p>
+                    <h1 class="text-3xl md:text-5xl font-bold bg-gradient-to-r from-yellow-400 to-gray-900 bg-clip-text text-transparent animate-fade-in-down">Hi <span id="userName">KJ</span>, Welcome To Website</h1>
+
+                    <p>
+                    Selamat datang di website portofolio saya! Website ini merupakan tugas dari pembelajaran Fundamental Course Software Engineering RevoU.  
+                    </p>
+                    
+               </section>
+
+               <section id="image">
+                    <div class="slide">
+                         <img class="img-slideshow" src="./assets/react1.jpg" alt="img1">
+     
+                         <img class="img-slideshow" src="./assets/react2.jpg" alt="img2">
+     
+                         <img class="img-slideshow" src="./assets/KJ_light.png" alt="img3">
+     
+                         <img class="img-slideshow" src="./assets/KJ_dark.png" alt="img4">
+                    
+                    </div>
+                    <div class="img-btn">
+                         <button class="prev" onclick="plusDivs(-1)">previous</button>
+                         <button class="next" onclick="plusDivs(1)">next</button>
+                    </div>
                </section>
 
                <hr>
@@ -106,25 +125,22 @@
                            
                                        <tr>
                                            <td></td>
-                                           <td><button type="button" onclick="tampilkanData();">Kirim</button></td>
+                                           <td><button type="button" onclick="validateForm();">Kirim</button></td>
                                        </tr>
                                    </table>
+
                                </form>
      
                          </div>
+                         <br>
      
-                         <div class="output">
-                              <div class="output-box">
-                                   <p><strong></strong> <span id="outputNama"></span></p>
-                                   <p><strong></strong> <span id="outputTanggal"></span></p>
-                                   <p><strong></strong> <span id="outputGender"></span></p>
-                                   <p><strong></strong> <span id="outputPesan"></span></p>
-                               </div>     
-                             
-                         </div>
+                         <div class="display-container">
+                              <header id="header-message">Timeline Pesan</header>
+                              <div id="display-name"></div>
+                          </div>
 
                     </div>
-                         
+                         <!-- informasi kontak -->
                     <div class="konten-message">
                          <p>Tertarik berdiskusi? Silakan hubungi saya melalui ikon di bawah.</p>
                      
